@@ -14,9 +14,9 @@ const Tours = () => {
   
 
   return (
-    <div className='row' style={{display:'flex', alignItems:'center', justifyContent:'center', maxWidth:'100vw'}}>
+    <div className='row pt-3 container-fluid' style={{display:'flex', flex:'1', backgroundColor:'rgba(49, 44, 133)', alignItems:'center', justifyContent:'center', maxWidth:'100vw'}}>
       {adat && adat.map(obj=> 
-        <div style={{display:'flex', alignItems:'center', justifyContent:'center', minHeight:'380px'}} key={obj.id} className='col-md-3 pb-4'><TourCard {...obj}/></div>
+        <div style={{display:'flex', alignItems:'center', justifyContent:'center', minHeight:'380px'}} key={obj.id} className='kutyuska col-md-3 pb-4'><TourCard {...obj}/></div>
       )}
     </div>
   )

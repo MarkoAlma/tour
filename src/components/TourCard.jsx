@@ -11,23 +11,24 @@ const TourCard = ({id, image, info, name, price}) => {
   const toggle = () => setModal(!modal);
 
   return (
-    <div>
+    <div className='baziska'>
       <Card
       style={{minHeight:'380px'}}
 >
-  <div>
+  <div className='alma'>
   <img
-    style={{objectFit:'cover', width:'100%', height:'250px'}}
+  className='img-fluid kep'
+    style={{objectFit:'cover', width:'100%', height:'250px', borderRadius:'5px'}}
     alt="Sample"
     src={image}
   />
   </div>
-  <CardBody style={{display:'flex', justifyContent:'center', flexDirection:'column'}}>
+  <CardBody style={{display:'flex', justifyContent:'space-between', flexDirection:'column'}}>
     <CardTitle tag="h5">
       {name}
     </CardTitle>
       <span style={{display:'block'}}><Button onClick={toggle} className='bg-primary' style={{ textAlign:'left', whiteSpace: 'nowrap', width:'auto', display: 'inline-block'}}>
-      Read more ➡
+      Read more →
     </Button></span>
   </CardBody>
   <MyModal image={image} info={info} price={price} modal={modal} setModal={setModal}/>

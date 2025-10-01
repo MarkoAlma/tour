@@ -7,7 +7,7 @@ const MyModal = ({info, image, price, modal, setModal}) => {
 
   return (
     <div>
-            <Modal isOpen={modal} toggle={toggle}>
+        <Modal isOpen={modal} toggle={toggle}>
         <ModalHeader toggle={toggle}></ModalHeader>
         <ModalBody>
           <img src={image} className='img-fluid' alt="" />

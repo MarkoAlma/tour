@@ -8,7 +8,7 @@ function App() {
 
 
   return (
-    <div style={{minWidth:'100%', display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center'}}>
+    <div style={{minWidth:'100%', display:'flex', minHeight:'100vh', flexDirection:'column', alignItems:'center', justifyContent:'center'}}>
       <Header/>
       <Tours/>
       <Footer/>
